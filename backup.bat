@@ -1,4 +1,6 @@
 @echo off
+setlocal
+
 :: To prevent illegal backup attempts by changing the target external storage with the same drive letter. (F:\ in this case.)
 :: Simply put same key in all the source and target drives.
 echo "Authenticating keys..."
@@ -33,3 +35,5 @@ exit -1
 robocopy e:\ f:\e /MIR /ZB /W:1 /R:0 /XJ /XJD /SL /ETA /a-:hs /mt /log:f:\log_e.txt /tee
 robocopy d:\ f:\d /MIR /ZB /W:1 /R:0 /XJ /XJD /SL /ETA /a-:hs /mt /log:f:\log_d.txt /tee
 robocopy c:\ f:\c /MIR /ZB /W:1 /R:0 /XJ /XJD /SL /ETA /a-:hs /mt /log:f:\log_c.txt /tee
+
+endlocal
