@@ -1,2 +1,4 @@
-# simple_windows_backup
-Simple backup script using Robocopy on Windows
+## Simple backup script using Robocopy on Windows
+
+- Just for my laptop...
+- Should run as administrator.
