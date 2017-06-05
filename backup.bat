@@ -20,7 +20,7 @@ if not "%KEYC%"=="0d 3a fa 54 1d 14 14 cd b3 4a f4 c3 68 d4 4b c4 5f 0e 63 87 60
   goto nokey
 ) else if not "%KEYD%"=="%KEYE%" (
   goto nokey
-) else if not "%KEYF%"=="%KEYF%" (
+) else if not "%KEYE%"=="%KEYF%" (
   goto nokey
 )
 goto backup
